@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vite-project</title>
+  <script type="module" src="./src/main.ts"></script>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <form id="member">
+    <h2>Member</h2>
+    <label for="memberName">Add name:</label>
+    <input type="text" id="memberName" name="memberName" required>
+
+    <label for="categoryMember">Choose a category:</label>
+    <select name="category" id="categoryMember">
+      <option value="ux">UX</option>
+      <option value="dev frontend">Dev Frontend</option>
+      <option value="dev backend">Dev Backend</option>
+    </select>
+    <button>Add member</button>
+  </form>
+
+  <form id="assignment">
+    <h2>Assignment</h2>
+    <label for="assignmentTitle">Add title:</label>
+    <input type="text" id="assignmentTitle" name="assignmentTitle" required>
+
+    <label for="assignmentDesc">Add description:</label>
+    <input type="text" id="assignmentDesc" name="assignmentDesc" required>
+
+    <label for="categoryAssignment">Choose a category:</label>
+    <select name="categoryAssignment" id="categoryAssignment">
+      <option value="ux">UX</option>
+      <option value="dev frontend">Dev Frontend</option>
+      <option value="dev backend">Dev Backend</option>
+    </select>
+    <button>Add assignment</button>
+  </form>
+
+  <h1>Scrum board</h1>
+  <div id="scrumBoard">
+    <div class="col" id="new">
+      <h3>New</h3>
+      <div class="content"></div>
+    </div>
+    <div class="col" id="doing">
+      <h3>Doing</h3>
+      <div class="content"></div>
+    </div>
+    <div class="col" id="done">
+      <h3>Done</h3>
+      <div class="content"></div>
+    </div>
+  </div>
+</body>
+
+</html>
